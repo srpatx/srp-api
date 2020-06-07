@@ -9,6 +9,8 @@ module Srp
         @method = method
       end
 
+      attr_reader :response
+
       def to_s
         <<~MESSAGE
           #{@method.to_s.upcase} request to #{@uri} failed with code '#{@response.code}':
