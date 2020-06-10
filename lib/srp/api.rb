@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "http"
+
 module Srp
   module Api
     class RequestError < RuntimeError
