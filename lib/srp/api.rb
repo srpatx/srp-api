@@ -6,6 +6,7 @@ module Srp
   module Api
     class RequestError < RuntimeError
       def initialize(response: , uri: , method: )
+        super
         @response = response
         @uri = uri
         @method = method
