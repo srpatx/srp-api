@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) { `git ls-files -z`.split("\x0") }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency("http", "~> 4.4")
+  spec.add_dependency("http", "~> 5.0")
 
   spec.add_development_dependency("activesupport", "~> 6.1")
   spec.add_development_dependency("rake", "~> 13.0")
