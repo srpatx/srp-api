@@ -5,8 +5,8 @@ require_relative "lib/srp/api/version"
 Gem::Specification.new do |spec|
   spec.name          = "srp-api"
   spec.version       = Srp::Api::VERSION
-  spec.authors       = ["Adam Milligan"]
-  spec.email         = ["adam@srp-ok.com"]
+  spec.authors       = ["Adam Milligan", "Grant Hutchins"]
+  spec.email         = ["adam@srp-ok.com", "grant.hutchins@srp-ok.com"]
 
   spec.summary       = "Common API behavior"
   spec.homepage      = "https://github.com/StrongholdResourcePartners/srp-api"
@@ -24,7 +24,8 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) { `git ls-files -z`.split("\x0") }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency("http", "~> 5.0", ">= 5.0.1")
+  # Support both HTTP.rb 4 and 5
+  spec.add_dependency("http", ">= 4.4")
 
   spec.add_development_dependency("activesupport", "~> 6.1")
   spec.add_development_dependency("rake", "~> 13.0")
