@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Srp::Api::Client
   REDIRECTION_ATTEMPTS = 10
 

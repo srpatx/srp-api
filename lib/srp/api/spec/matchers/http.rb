@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "active_support/core_ext/module/delegation"
 
 RSpec::Matchers.define :make_http_request do |method|
