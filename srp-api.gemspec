@@ -26,9 +26,9 @@ Gem::Specification.new do |spec|
   # Support both HTTP.rb 4 and 5
   spec.add_dependency("http", ">= 4.4")
 
-  spec.add_development_dependency("activesupport", "~> 7.0")
-  spec.add_development_dependency("rake", "~> 13.0")
-  spec.add_development_dependency("rspec", "~> 3.10")
+  spec.add_development_dependency("activesupport")
+  spec.add_development_dependency("rake")
+  spec.add_development_dependency("rspec")
   spec.add_development_dependency("rubocop")
 end
 
